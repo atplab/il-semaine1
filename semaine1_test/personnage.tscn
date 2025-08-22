@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://ck41dxl1ghuab"]
+
+[ext_resource type="Script" uid="uid://c4gchpmoea1au" path="res://personnage.gd" id="1_176ip"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_176ip"]
+
+[node name="personnage" type="Node2D"]
+script = ExtResource("1_176ip")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_176ip")

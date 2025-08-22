@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://dobvprsndvt4g"]
+
+[ext_resource type="Texture2D" uid="uid://cb2rivssd3cwy" path="res://Blue/brick_high_4.png" id="1_dw147"]
+[ext_resource type="Texture2D" uid="uid://lwy0amiewf76" path="res://Blue/brick_high_6.png" id="2_85k1n"]
+[ext_resource type="Texture2D" uid="uid://c5l7ukryumk8j" path="res://personnage jaune/character_yellow_climb_a.svg" id="3_uu20a"]
+[ext_resource type="Texture2D" uid="uid://br7hkyvwdxbah" path="res://personnage jaune/character_yellow_duck.svg" id="4_3r34w"]
+[ext_resource type="Texture2D" uid="uid://bogyujxyqpviy" path="res://personnage jaune/character_yellow_idle.svg" id="5_5ts8o"]
+
+[node name="niveau1" type="Node2D"]
+
+[node name="BrickHigh4" type="Sprite2D" parent="."]
+position = Vector2(407, 368)
+texture = ExtResource("1_dw147")
+
+[node name="BrickHigh6" type="Sprite2D" parent="."]
+position = Vector2(569, 369)
+texture = ExtResource("2_85k1n")
+
+[node name="BrickHigh5" type="Sprite2D" parent="."]
+position = Vector2(473, 314)
+texture = ExtResource("1_dw147")
+
+[node name="CharacterYellowClimbA" type="Sprite2D" parent="."]
+modulate = Color(0.501961, 0.501961, 0.501961, 1)
+position = Vector2(374, 290)
+texture = ExtResource("3_uu20a")
+
+[node name="CharacterYellowDuck" type="Sprite2D" parent="."]
+modulate = Color(0.521569, 0.737255, 0.737255, 1)
+position = Vector2(602, 277)
+texture = ExtResource("4_3r34w")
+
+[node name="CharacterYellowIdle" type="Sprite2D" parent="."]
+position = Vector2(473, 222)
+texture = ExtResource("5_5ts8o")

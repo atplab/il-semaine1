@@ -1,0 +1,59 @@
+[gd_scene load_steps=8 format=3 uid="uid://cm8luaxvcabgt"]
+
+[ext_resource type="Texture2D" uid="uid://dui831rqldw2s" path="res://personnage mauve/character_purple_walk_a.svg" id="1_snq04"]
+[ext_resource type="Texture2D" uid="uid://bsr3btx1po6y6" path="res://personnage mauve/character_purple_walk_b.svg" id="2_k5xrb"]
+[ext_resource type="Texture2D" uid="uid://u8w855w15lig" path="res://personnage mauve/character_purple_duck.svg" id="3_4rphw"]
+[ext_resource type="Texture2D" uid="uid://c5l7ukryumk8j" path="res://personnage jaune/character_yellow_climb_a.svg" id="4_8464h"]
+[ext_resource type="Texture2D" uid="uid://c5hj0qm34chm4" path="res://personnage jaune/character_yellow_climb_b.svg" id="5_mea14"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hlucm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_snq04")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_k5xrb")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_snq04")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_4rphw")
+}],
+"loop": true,
+"name": &"planer mauve",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0l166"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_8464h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_mea14")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Personnage_exemple" type="Node2D"]
+
+[node name="marcher mauve" type="AnimatedSprite2D" parent="."]
+position = Vector2(418, 366)
+sprite_frames = SubResource("SpriteFrames_hlucm")
+animation = &"planer mauve"
+frame_progress = 0.561197
+
+[node name="monter jaune" type="AnimatedSprite2D" parent="."]
+position = Vector2(230, 182)
+sprite_frames = SubResource("SpriteFrames_0l166")
+frame_progress = 0.518871
